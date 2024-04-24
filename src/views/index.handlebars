@@ -1,0 +1,17 @@
+<h1 class="bg-success-subtle p-2 text-center">CODER NOTES</h1>
+<section class="d-flex">
+    <article class="w-50 d-flex flex-column align-items-center ">
+        <h1 class="text-center">CREATE NOTE</h1>
+        <form class="d-flex flex-column w-50">
+            <input class="m-2"  type="text" name="text" id="text" placeholder="write a new note">
+            <input class="m-2" type="date" name="date" id="date">
+            <input class="m-2" type="text" name="photo" id="photo">
+            <input class="m-2" type="button" value="send" id="sendNote">
+        </form>
+    </article>
+    <article id="notes" class="d-flex flex-wrap w50"></article>
+</section>
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<script src="/scripts/real.js"></script>
+{{!-- la lógica se pasó a real.js --}}
+

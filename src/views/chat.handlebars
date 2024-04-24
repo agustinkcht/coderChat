@@ -1,0 +1,26 @@
+<div class="w-100 d-flex flex-column align-items-center">
+    <h2>Welcome to the community chat</h2>
+    <div class="bg-secondary-subtle w-50">
+        <h3 class="p-2 m-2">Recent Messages</h3>
+        {{!-- chat space --}}
+        <span class="p-2 m-2" id="allMessages">
+            |chats will be rendered here|
+        </span>
+    </div>
+    {{!-- input field --}}
+        <div class="w-50 d-flex justify-content-center align-items-center">
+        <span class="fw-bold" id="nickname"></span>
+        <input 
+        class="w-100 p-2 m-2" 
+        type="text" 
+        name="message" 
+        id="message" 
+        placeholder="Type your message"
+        > 
+    </div>
+</div>
+<script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="/scripts/chat.js"></script>
+
+
